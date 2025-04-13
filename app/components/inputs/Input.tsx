@@ -10,21 +10,21 @@ interface InputProps {
   required?: boolean;
   register: UseFormRegister<FieldValues>;
   errors: FieldErrors;
-  disabled: boolean;
+  disabled?: boolean;
 }
 const Input: React.FC<InputProps> = ({
-  disabled,
-  errors,
-  id,
   label,
-  register,
-  required,
+  id,
   type,
-}) => {
+  required,
+  register,
+  errors,
+  disabled,
+}: InputProps) => {
   return (
     <div>
       <label
-        className="block text-sm leading-6 text-gray-900"
+        className="block text-sm font-medium leading-6 text-gray-900"
         htmlFor={id}
       >
         {label}
@@ -36,7 +36,8 @@ const Input: React.FC<InputProps> = ({
           autoComplete={id}
           disabled={disabled}
           {...register(id, { required })}
-          className={clsx(`
+          className={clsx(
+            `
             form-input 
             block 
             w-full 
@@ -55,8 +56,8 @@ const Input: React.FC<InputProps> = ({
             :text-sm 
             sm:leading-6`,
             errors[id] && "focus:ring-rose-500",
-            disabled && "opacity-50 cursor-default",
-        )}
+            disabled && "opacity-50 cursor-default"
+          )}
         />
       </div>
     </div>
