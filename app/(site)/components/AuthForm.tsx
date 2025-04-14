@@ -13,6 +13,7 @@ import {
 import { PassThrough } from "stream";
 import AuthSocialButton from "./AuthSocialButton";
 import { BsGithub, BsGoogle } from "react-icons/bs";
+import axios from "axios";
 
 type Variant = "LOGIN" | "REGISTER";
 
@@ -34,7 +35,7 @@ const AuthForm = () => {
   } = useForm<FieldValues>({
     defaultValues: {
       name: "",
-      else: "",
+      email: "",
       password: "",
     },
   });
@@ -43,6 +44,7 @@ const AuthForm = () => {
     setIsLoading(true);
     if (variant === "REGISTER") {
       // axios register
+      axios.post("/api/register", data);
     }
     if (variant === "LOGIN") {
       // axios login
@@ -76,7 +78,6 @@ const AuthForm = () => {
             register={register}
             errors={errors}
             disabled={isLoading}
-
           />
 
           <div>
