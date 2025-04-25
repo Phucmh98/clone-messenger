@@ -9,9 +9,9 @@ interface IParams {
   conversationId: string;
 }
 
-const ConversationId = async ({ params }: { params: IParams }) => {
-  const conversation = await getConversationById(params.conversationId);
-  const messages = await getMessenges(params.conversationId);
+const ConversationId = async ({ params }: { params: Promise<IParams> }) => {
+  const conversation = await getConversationById((await params).conversationId);
+  const messages = await getMessenges((await params).conversationId);
 
   if (!conversation) {
     return (
