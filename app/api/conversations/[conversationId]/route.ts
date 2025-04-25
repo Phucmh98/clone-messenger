@@ -5,16 +5,16 @@ import { pusherServer } from "@/app/libs/pusher";
 
 // Cấu trúc tham số params để Next.js nhận diện đúng
 interface IParams {
-    conversationId: string;  // Tham số phải có kiểu bắt buộc
+    conversationId?: string;  // Tham số phải có kiểu bắt buộc
 }
 
 // Xử lý API DELETE
 export async function DELETE(
     request: Request,
-    { params }: { params: IParams } // Chắc chắn params có kiểu chính xác
+    { params }: { params: Promise<IParams> } // Chắc chắn params có kiểu chính xác
 ) {
     try {
-        const { conversationId } = params; // Truy xuất conversationId từ params
+        const { conversationId } = await params; // Truy xuất conversationId từ params
         const currentUser = await getCurrentUser(); // Lấy người dùng hiện tại
 
         if (!currentUser?.id) {
