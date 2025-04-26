@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Messenger Clone   <img src="https://raw.githubusercontent.com/Phucmh98/clone-messenger/refs/heads/master/public/images/logo.png" width="30px" height="30px" alt="logo" class="image">  
 
-## Getting Started
+## Introduction 🎊
+This is a learning project aimed at building a real-time messaging application inspired by popular platforms such as Facebook Messenger. The project is developed using <img height="15" width="15" src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/nextdotjs.svg" />
+[**Next.js**](https://nextjs.org/) for both the frontend and backend APIs.
 
-First, run the development server:
+_**The main goals of this project are to:**_
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+>👉Build web applications with [**Next.js**](https://nextjs.org/). ✅
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+>👉Explore and implement real-time messaging features. ✅
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+>👉Practice state management and user interaction within the React/Next.js environment. ✅
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+>👉Work with databases and user authentication. ✅
 
-## Learn More
+## Main Features 🎆🎆🎆
 
-To learn more about Next.js, take a look at the following resources:
+😃 _**The current project includes the following features:**_
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  >🥇 **User Authentication:** Secure account registration and login.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+  >💲 **Real-time Messaging:** Send and receive instant messages between users.
 
-## Deploy on Vercel
+  >🗂️ **Conversation Management:** Display a list of conversations.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  >🔦 **Responsive User Interface:** Optimized display on different screen sizes (desktop, mobile).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Technology
+<p align="center">
+  <a href="https://www.typescriptlang.org/">
+    <img height="40" width="40" src="https://cdn.simpleicons.org/typescript/3178C6" />
+  </a>
+
+  <a href="(https://nextjs.org/)">
+    <img height="40" width="40" src="https://cdn.simpleicons.org/nextdotjs/ffffff" />
+  </a>
+
+  <a href="(https://nextjs.org/)">
+    <img height="40" width="40" src="https://cdn.simpleicons.org/tailwindcss/06B6D4" />
+  </a>
+  
+  <a href="(https://www.prisma.io/)">
+    <img height="40" width="40" src="https://cdn.simpleicons.org/prisma/2D3748" />
+  </a>
+
+  <a href="(https://www.mongodb.com/)">
+    <img height="40" width="40" src="https://cdn.simpleicons.org/mongodb/47A248" />
+  </a>
+
+ <a href="(https://pusher.com/)">
+  <img height="40" width="40" src="https://cdn.simpleicons.org/pusher/300D4F" />
+</a>
+
+</p>
