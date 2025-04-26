@@ -1,10 +1,12 @@
 # Messenger Clone   <img src="https://raw.githubusercontent.com/Phucmh98/clone-messenger/refs/heads/master/public/images/logo.png" width="30px" height="30px" alt="logo" class="image">  
 
-## Introduction 🎊
-This is a learning project aimed at building a real-time messaging application inspired by popular platforms such as Facebook Messenger. The project is developed using <img height="15" width="15" src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/nextdotjs.svg" />
-[**Next.js**](https://nextjs.org/) for both the frontend and backend APIs.
+## 🎯 Introduction
 
-_**The main goals of this project are to:**_
+>_This is a learning project aimed at building a real-time messaging application inspired by Facebook Messenger._
+
+This project is developed using [**Next.js**](https://nextjs.org/) for both frontend and backend APIs.
+
+✨ Main Goals:
 
 >👉Build web applications with [**Next.js**](https://nextjs.org/). ✅
 
@@ -14,7 +16,7 @@ _**The main goals of this project are to:**_
 
 >👉Work with databases and user authentication. ✅
 
-## Main Features 🎆🎆🎆
+## 🌟 Main Features 🎆🎆🎆
 
 😃 _**The current project includes the following features:**_
 
@@ -26,7 +28,7 @@ _**The main goals of this project are to:**_
 
   >🔦 **Responsive User Interface:** Optimized display on different screen sizes (desktop, mobile).
 
-## Technology
+## 🛠️ Technology Stack
 <p align="center">
   <a href="https://www.typescriptlang.org/">
     <img height="40" width="40" src="https://cdn.simpleicons.org/typescript/3178C6" />
