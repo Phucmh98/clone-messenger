@@ -34,6 +34,7 @@ className=" relative h-11 w-11">
         <Image 
         alt="Avatar"
         fill
+        sizes="(10px)"
         src={user?.image || '/images/placeholder.jpg'}
         />
     </div>

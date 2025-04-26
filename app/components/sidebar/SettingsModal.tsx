@@ -38,7 +38,8 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
     },
   });
   const image = watch("image");
-  const handleUpload = (result: any) => {
+  const handleUpload = (result: any, widget: any) => {
+    
     setValue("image", result?.info?.secure_url, {
       shouldValidate: true,
     });
@@ -96,14 +97,17 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                     />
                   </div>
 
-                  <CldUploadButton
-                    options={{ maxFiles: 1 }}
-                    onUpload={handleUpload}
+                  <CldUploadButton 
                     uploadPreset="test-upload"
+                    options={{ maxFiles: 1 }}
+                    // onUpload={handleUpload}
+                    onSuccess={handleUpload}
                   >
-                    <Button disabled={isLoading} secondary type="button">
-                      Change
-                    </Button>
+                    <div className="inline-flex">
+                      <Button disabled={isLoading} secondary >
+                        Change
+                      </Button>
+                    </div>
                   </CldUploadButton>
                 </div>
               </div>
@@ -122,7 +126,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
             <Button disabled={isLoading} secondary onClick={onClose}>
               Cancel
             </Button>
-            <Button disabled={isLoading} type="submit">
+            <Button disabled={isLoading} submit >
               Save
             </Button>
           </div>

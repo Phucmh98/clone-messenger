@@ -108,7 +108,7 @@ const GroupChatModal: React.FC<GroupChatModalProps> = ({
         >
           <Button
             disabled={isLoading}
-            type="submit"
+           submit
             onClick={() => {}}
             secondary
           >Cancel
@@ -116,8 +116,7 @@ const GroupChatModal: React.FC<GroupChatModalProps> = ({
 
           <Button
             disabled={isLoading}
-            type="submit"
-           
+            submit           
           >
             Create
           </Button>

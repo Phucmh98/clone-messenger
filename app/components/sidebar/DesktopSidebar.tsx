@@ -36,6 +36,7 @@ const DesktopSidebar: React.FC<DesktopSidebarProps> = ({ currentUser }) => {
         lg:flex
         lg:flex-col
         justify-between
+        border-gray-200
     "
     >
       <nav

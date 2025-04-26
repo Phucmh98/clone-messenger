@@ -43,7 +43,7 @@ const Input: React.FC<InputProps> = ({
             w-full 
             rounded-md 
             border-0
-            py-1.5 
+            p-1.5 
             text-gray-900 
             shadow-sm 
             ring-1 
@@ -53,6 +53,7 @@ const Input: React.FC<InputProps> = ({
             focus:ring-2 
             focus:ring-inset
             focus:ring-sky-500 
+            focus-visible:outline-none
             :text-sm 
             sm:leading-6`,
             errors[id] && "focus:ring-rose-500",

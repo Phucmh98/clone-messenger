@@ -28,8 +28,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
             className="
                             fixed 
                             inset-0 
-                            bg-gray-500 
-                            bg-opacity-75 
+                            bg-gray-500/75 
                             transition-opacity
                         "
           />
@@ -37,8 +36,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
 
         {/* Modal container */}
         <div className="fixed inset-0 z-10 overflow-y-auto">
-        <div
-          className="
+          <div
+            className="
                         fixed
                         inset-0
                         flex
@@ -48,19 +47,19 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
                         text-center
                         sm:p-0
                     "
-        >
-          <Transition.Child
-            as={Fragment}
-            enter="ease-out duration-300"
-            enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-            enterTo="opacity-100 translate-y-0 sm:scale-100"
-            leave="ease-in duration-200"
-            leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-            leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
-            {/* Modal panel */}
-            <Dialog.Panel
-              className="
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              enterTo="opacity-100 translate-y-0 sm:scale-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+              leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+            >
+              {/* Modal panel */}
+              <Dialog.Panel
+                className="
                                 relative
                                 transform
                                 overflow-hidden
@@ -77,10 +76,10 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
                                 sm:max-w-lg
                                 sm:p-6
                             "
-            >
-              {/* Close button container */}
-              <div
-                className="
+              >
+                {/* Close button container */}
+                <div
+                  className="
                                     absolute
                                     right-0
                                     hidden
@@ -88,9 +87,9 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
                                     sm:block
                                     z-10
                                 "
-              >
-                <button
-                  className="
+                >
+                  <button
+                    className="
                                     cursor-pointer
                                     rounded-md
                                     bg-white
@@ -101,17 +100,17 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
                                     focus:ring-sky-500
                                     focus:ring-offset-2
                                 "
-                  onClick={onClose}
-                >
-                  <span className="sr-only">Close</span>
-                  <IoClose className="h-6 w-6" />
-                </button>
-              </div>
+                    onClick={onClose}
+                  >
+                    <span className="sr-only">Close</span>
+                    <IoClose className="h-6 w-6" />
+                  </button>
+                </div>
 
-              {children}
-            </Dialog.Panel>
-          </Transition.Child>
-        </div>
+                {children}
+              </Dialog.Panel>
+            </Transition.Child>
+          </div>
         </div>
       </Dialog>
     </Transition.Root>

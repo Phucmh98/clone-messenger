@@ -51,6 +51,7 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
         justify-between
         items-center
         shawdow-sm
+        border-gray-200
         "
       >
         <div className="flex gap-3 items-center">

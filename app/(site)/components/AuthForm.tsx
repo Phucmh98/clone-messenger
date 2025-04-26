@@ -124,7 +124,7 @@ const AuthForm = () => {
           />
 
           <div>
-            <Button disabled={isLoading} fullWidth type="submit">
+            <Button disabled={isLoading} fullWidth submit>
               {variant === "LOGIN" ? "Sign in" : "Register"}
             </Button>
           </div>

@@ -97,13 +97,14 @@ sm:text-left"
         disabled={isLoading}
         danger
         onClick={onDelete}
+        submit
         >Delete
         </Button>
         <Button       
         disabled={isLoading}
         secondary
         onClick={onClose}
-        >Delete
+        >Close
         </Button>
       </div>
     </Modal>

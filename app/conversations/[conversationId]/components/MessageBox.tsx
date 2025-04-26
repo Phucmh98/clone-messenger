@@ -63,6 +63,7 @@ const [imageModalOpen, setImageModalOpen] = useState(false);
             alt="Image"
             width={288}
             height={288}
+            style={{ width: "auto", height: "auto" }}
             src={data.image}
             className="object-cover cursor-pointer hover:scale-110 transition-transform"
           />

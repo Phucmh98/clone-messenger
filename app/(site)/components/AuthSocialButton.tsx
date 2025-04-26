@@ -20,6 +20,7 @@ const AuthSocialButton: React.FC<AuthSocialButtonProps> = ({
       onClick={onClick}
       disabled={disabled}
       className="
+      cursor-pointer
         inline-flex
         w-full
         justify-center

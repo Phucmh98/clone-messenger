@@ -30,7 +30,7 @@ const Form = () => {
     });
   };
 
-  const handleUpload = (result: any) => {
+  const handleUpload = (result: any,widget:any) => {
     console.log("result", result);
     axios.post("/api/messages", {
       image: result?.info?.secure_url,
@@ -50,12 +50,14 @@ const Form = () => {
         gap-2
         lg:gap-4
         w-full
+        border-gray-200
         "
     >
       <CldUploadButton
         options={{ maxFiles: 1 }}
         uploadPreset="test-upload"
-        onUpload={handleUpload}
+        // onUpload={handleUpload}
+        onSuccess={handleUpload}
       
       >
         <HiPhoto size={30} className="text-sky-500 cursor-pointer" />
